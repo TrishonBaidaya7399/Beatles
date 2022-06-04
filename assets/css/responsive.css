@@ -1,0 +1,9 @@
+@media (min-width:768px) and (max-width:1100px) {
+    .team_img_overlay ul li a {
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+        font-size: 16px;
+        margin: 6px 0;
+    }
+}

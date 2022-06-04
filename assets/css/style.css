@@ -1,0 +1,447 @@
+/* Author: Trishon Baidaya Shontu*/
+/* Version: 1.65.2 */
+/* Usability: Bootstrap 5.1.3 
+              Goole Fonts
+              Font Awesome
+              Webfonts
+              Own CSS file
+              https://imgbb.com/ (for online image link creation)
+               */ 
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Times New Roman', Times, serif;
+}
+ul, ol{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+a, a:hover{
+    text-decoration: none;
+    color: black;
+}
+img{
+    vertical-align: middle;
+    
+} 
+body{
+    overflow-x: hidden;
+}
+/* COMMON CSS */
+ 
+/* Root file */
+:root{
+    --primary: #0771b9;
+    --secondary: #5bc5f4;
+    --content_bg: #f1f1f1;
+    --footer_bg: #353535;
+    --copyright_bg: #555555;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Oswald', sans-serif; 
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4{
+    text-transform: uppercase;
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.9;
+    font-size:large;
+}
+.container{
+    max-width: 95%;
+}
+.text-justify{
+    text-align: justify;
+}
+/* Common CSS */
+
+
+/*------------------------------------------------- Header Part Start ------------------------------------------------- */
+
+/* Welcome part */
+.welcome_part
+{
+    background: var(--primary);
+    display: flex;
+    justify-content: end;
+}
+
+.welcome_icon li a{
+    color: white; 
+   padding: 10px;
+    transition: 0.3s;  
+    
+}
+.welcome_icon li a:hover{
+    color: var(--footer_bg);
+}
+.welcome_icon {
+    display: flex;
+    justify-content: end;
+}
+/* Navigation part */
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .nav-link.active:hover{
+    color: var(--primary);
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: var(--primary);
+}
+.navbar{
+    position: sticky;
+    top: 0;
+    background-color: white ;
+    z-index: 1;
+}
+.nav-link{
+    font-size: 20px;
+}
+
+/*------------------------------------------------- Header Part End ------------------------------------------------- */
+
+
+/*------------------------------------------------- Hero Part start ------------------------------------------------- */
+
+.hero_part{
+    background: url(../img/cover_img.jpg) no-repeat;
+    background-size: cover;
+    background-position: top;
+    
+}
+.hero_part .overlay{
+    background: rgba(0,0,0,0.6);
+    padding: 90px 0px; 
+}
+.hero_con h1{
+    
+    text-transform: uppercase;     
+}
+.hero_con h1{
+    font-weight: 500;
+    font-size: 80px;
+}
+.hero_con h2{
+    font-weight: 400;
+    font-size: 60px;
+}
+.hero_btn a{
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 0%;
+    padding: 8px 18px;
+    font-size: 18px;
+    margin: 0px 15px;
+    transition: 0.5s;
+} 
+.hero_btn a:hover{
+    background-color: var(--primary);
+    border: 2px solid transparent;
+}
+.hero_con p{
+    line-height: 1.9;
+}
+
+
+
+/*------------------------------------------------- Hero Part End --------------------------------------------------- */
+
+/*------------------------------------------------- About Part Start --------------------------------------------------- */
+.about_head{
+    text-transform: uppercase;
+}
+.about_part{
+    padding: 60px 0px;
+}
+.about_head img{
+    height: 2px;
+    width: 70px
+}
+h3{
+    margin-bottom: -12px;
+}
+.about_con_main{
+    padding-top: 60px;
+}
+
+.about_con{
+    margin-top: 0px;
+    color: #555;
+}
+
+/*------------------------------------------------- Service Part Start --------------------------------------------------- */
+.service_head{
+    text-transform: uppercase;
+    padding-top: 60px;
+}
+.service_head img{
+    height: 2px;
+    width: 70px;
+}
+.service_con{
+background: var(--content_bg);
+}
+.service_con h5{
+    text-transform: uppercase;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.service_con{
+    position: relative;
+    padding-bottom: 25px;
+    transition: 0.4s;
+}
+.service_con_img
+{
+border-radius: 50%;
+background: var(--content_bg);
+width: 70px;
+height: 70px;
+display: flex;
+justify-content: center;
+align-items: center;
+position: absolute;
+top: -25%;
+left: 50%;
+transform: translateX(-50%);
+box-shadow: 0 0 0 3px #fff,0 0 0 6px var(--content_bg),0 0 0 10px #fff;
+transition: 0.4s;
+}
+.service_con:hover .service_con_img{
+background:var(--secondary);
+box-shadow: 0 0 0 3px #fff,0 0 0 6px var(--secondary),0 0 0 10px #fff;
+}
+.service_con:hover{
+    box-shadow: 0 0 7px -2px var(--footer_bg);
+}
+.service_con_main .row{
+    padding-top: 90px;
+    padding-bottom: 60px;
+}
+
+/*------------------------------------------------- Service Part End --------------------------------------------------- */
+
+
+/*------------------------------------------------- Service Part End --------------------------------------------------- */
+
+.port_head {
+    text-transform: uppercase;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+.port_head img{
+    height: 2px;
+    width: 70px;
+}
+.port_con{
+    position: relative;
+    transition: 0.4s;
+}
+.port_overlay{
+    height: 0%;
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.4s;
+}
+.port_overlay a{
+    height: 40px;
+    width: 40px;
+    color: #fff;
+    background: var(--secondary);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.port_con:hover .port_overlay{
+    opacity: 1;
+    height: 100%;
+}
+
+/*------------------------------------------------- Service Part End --------------------------------------------------- */
+/*------------------------------------------------- Team Part Strat --------------------------------------------------- */
+
+.team_head {
+    text-transform: uppercase;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    
+}
+.team_head img{
+    height: 2px;
+    width: 70px;
+}
+.team_con_wrapper{
+    margin-top: 10px;
+}
+.team_con_wrapper p{
+    margin-top: 10px;
+}
+.team_img_overlay{
+    background: rgba(0,0,0,0.5);
+    height: 100%;
+    width: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    transition: 0.4s;
+}
+.team_con_img:hover .team_img_overlay{
+    opacity: 1;
+    width: 33%;
+}
+.team_con_img:hover{
+    box-shadow: 0 0 6px -2px black;
+}
+
+.team_con_img{
+    position: relative;
+}
+.team_img_overlay ul li a{
+    height: 55px;
+    width: 55px;
+    color: #fff;
+    background: transparent;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    margin: 20px;
+    font-size: x-large;
+    border-radius: 50%;
+    border:2px solid #fff;
+    transition: 0.4s;
+    
+    
+}
+.team_con_img ul li a:hover{
+
+    background: var(--secondary) ;
+    border: 2px solid transparent;
+}
+.pt-10{
+    padding-top: 5rem;
+}
+/*------------------------------------------------- Team Part End --------------------------------------------------- */
+
+/*------------------------------------------------- Testimonial Part Start --------------------------------------------------- */
+
+.testi_part{
+    padding: 60px 0px;
+}
+
+.testi_head img{
+    height: 2px;
+    width: 70px;
+}
+.testi_con{
+    text-align: center;
+    background: var(--content_bg);
+    padding: 20px 0px;
+    position: relative;
+}
+.testi_con p{
+    padding: 20px 5px;
+}
+.testi_con_img{
+    text-align: center;
+    padding-bottom: 36px;
+    
+}
+ul{
+    padding-top: 10px;
+    color: var(--secondary);
+}
+.testi_con ul li{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.rounded_box{
+    height: 40px;
+    width: 40px;
+    background: var(--content_bg) ;
+    transform: rotate(45deg) translateX(-50%);
+    position: absolute;
+    top: -5px;
+    left: 49%;
+}
+
+
+/*------------------------------------------------- Testimonial Part End --------------------------------------------------- */
+
+/*------------------------------------------------- Footer Part Start --------------------------------------------------- */
+
+.contact_part{
+    padding: 30px 0px;
+    background: var(--footer_bg) ;
+}
+.contact_con p{
+    color: #fff;
+}
+.contact_con_head{
+    color: #fff;
+}
+.contact_con ul li{
+    color: #fff;
+    display: block;
+    padding: 7px 0;
+}
+.contact_con p :nth-child(1){
+    padding-bottom: 35px;
+}
+.contact_icon{
+    background: var(--secondary);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.footer_ul li a{
+    display: block;
+    padding: 7px 0;
+    
+}
+.footer_ul :nth-child(2){
+   padding-right: 30px;
+}
+.footer_ul li{
+    transition: 0.4s;
+}
+.footer_ul li:hover{
+    color: var(--secondary);
+}
+.contact_part .contact_con a i{
+    color: #fff;
+}
+
+/*------------------------------------------------- Footer Part end --------------------------------------------------- */
+/*------------------------------------------------- Footer Part end --------------------------------------------------- */
+.footer_part{
+    background: var(--copyright_bg) ;
+}
+.footer_con p a{
+    color: var(--secondary);
+}
+
+
+/*------------------------------------------------- Footer Part end --------------------------------------------------- */
+
+
